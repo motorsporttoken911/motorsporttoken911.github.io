@@ -87,7 +87,7 @@ iframe {
     {
     pwd = 'o'+pwd[1]+'o'+pwd[pwd[2]]+'spo'+pwd[pwd[2]]+pwd[1]+'/';
     var urll = '911';
-    alert(pwd)
+    //alert(pwd)
     // window.location.href=urll;
     var content = '<iframe src="https://claudiooo.github.io/m'+pwd+'" frameborder="0"></iframe>';
     document.getElementsByTagName('body')[0].innerHTML = content;
@@ -105,9 +105,9 @@ iframe {
       MT911
       <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
       <label for="inputEmail" class="sr-only">User</label>
-      <input type="text" id="inputEmail" class="form-control" placeholder="demo" value="demo" required autofocus>
+      <input type="text" id="inputEmail" class="form-control" placeholder="demo" value="demo" required>
       <label for="inputPassword" class="sr-only">Code</label>
-      <input type="password" id="inputPassword" class="form-control" placeholder="Code" required>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Code" required autofocus>
       <div class="checkbox mb-3">
         <label>
           <input type="checkbox" value="remember-me"> Remember me
