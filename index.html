@@ -15,12 +15,10 @@
 
 
 <style>
-
 html,
 body {
   height: 100%;
 }
-
 body {
   display: -ms-flexbox;
   display: flex;
@@ -30,7 +28,6 @@ body {
   padding-bottom: 40px;
   background-color: #f5f5f5;
 }
-
 .form-signin {
   width: 100%;
   max-width: 330px;
@@ -60,43 +57,38 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-
-
-
 iframe {
     display:block;
     width:100%;
     height:100vh;
 }
-
 </style>
 
   </head>
   <body>
 
 <script type="text/javascript">
-
 //var mystring = 'a';
 //var my_string2 = my_string.substring(0,my_string.length-1)+String.fromCharCode(my_string.charCodeAt(my_string.length-1)+1);
 //alert(my_string2);
-
   function url() {
+   
+
+
     var pwd = document.getElementById("inputPassword").value;
     pwd = pwd.toLowerCase().replace(/\s/g,'');
-    if ( 100* (pwd[pwd[2]-1]*3) + (10 * pwd[pwd[2]-1]/3) + (pwd[pwd[2]-1]/3)  == 911)
+    if (100* (pwd[pwd[2]-1]*3) + (10 * pwd[pwd[2]-1]/3) + (pwd[pwd[2]-1]/3)  == 911)
     {
-    pwd = 'o'+pwd[1]+'o'+pwd[pwd[2]]+'spo'+pwd[pwd[2]]+pwd[1]+'/';
-    var urll = '911';
-    //alert(pwd)
-    // window.location.href=urll;
-    var content = '<iframe src="https://claudiooo.github.io/m'+pwd+'" frameborder="0"></iframe>';
+    
+    var urll = 'https://claudiooo.github.io/motorsport/src/theme/'+pwd+'.html';
+    var content = '<iframe src="'+urll+'" frameborder="0"></iframe>';
     document.getElementsByTagName('body')[0].innerHTML = content;
     }
     else{
+      alert('Sorry wrong password.');
       return '#';
     }
   }
-
 </script>
 
 
